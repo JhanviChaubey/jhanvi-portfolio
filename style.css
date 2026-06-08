@@ -37,7 +37,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/*Typography and Nav*/
+/* =============================================
+   TYPOGRAPHY SCALE
+   ============================================= */
 
 h1, h2, h3 {
   font-family: var(--font);
@@ -68,6 +70,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* =============================================
+   NAV
+   ============================================= */
 
 nav {
   position: fixed;
@@ -121,6 +127,11 @@ nav {
   background: var(--accent) !important;
   color: white !important;
 }
+
+/* =============================================
+   HERO
+   ============================================= */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -260,6 +271,11 @@ nav {
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 70% 80% at 80% 50%, black 0%, transparent 100%);
 }
+
+/* =============================================
+   SECTIONS — SHARED
+   ============================================= */
+
 .section {
   padding: var(--section-pad);
 }
@@ -295,7 +311,9 @@ nav {
   color: var(--text-light);
 }
 
-/*FOCUS GRID*/
+/* =============================================
+   FOCUS GRID
+   ============================================= */
 
 .focus-grid {
   display: grid;
@@ -340,6 +358,10 @@ nav {
   color: var(--muted);
   max-width: none;
 }
+
+/* =============================================
+   PROJECTS
+   ============================================= */
 
 .project-block {
   border-top: 1px solid var(--border-dark);
@@ -456,6 +478,11 @@ nav {
   color: white;
   border-color: white;
 }
+
+/* =============================================
+   RESEARCH
+   ============================================= */
+
 .research-block {
   border-left: 3px solid var(--accent);
   padding-left: 40px;
@@ -502,6 +529,10 @@ nav {
   color: var(--muted);
   font-style: italic;
 }
+
+/* =============================================
+   ABOUT
+   ============================================= */
 
 .about-inner {
   display: grid;
@@ -585,4 +616,146 @@ nav {
   height: 5px;
   border-radius: 50%;
   background: var(--accent);
+}
+
+/* =============================================
+   CONTACT
+   ============================================= */
+
+.contact-inner {
+  max-width: 700px;
+}
+
+.contact-desc {
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+  color: var(--muted);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+  transition: padding-left 0.2s;
+  gap: 20px;
+}
+
+.contact-item:hover {
+  padding-left: 8px;
+}
+
+.contact-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  min-width: 80px;
+}
+
+.contact-val {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+.contact-item:hover .contact-val {
+  color: var(--accent);
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+
+footer {
+  background: var(--bg-dark);
+  padding: 48px 40px;
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.3);
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+@media (max-width: 900px) {
+  :root {
+    --section-pad: 80px 24px;
+  }
+
+  nav {
+    padding: 18px 24px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a:not(.nav-github) {
+    display: none;
+  }
+
+  .hero-inner {
+    padding: 60px 24px;
+  }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .questions-block {
+    padding-top: 0;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .focus-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .project-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+}
+
+@media (max-width: 600px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
 }
