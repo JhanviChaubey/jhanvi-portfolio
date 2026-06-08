@@ -1,145 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jhanvi Chaubey</title>
-
-    <!-- Cool fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jhanvi Chaubey — Research & Engineering</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="hero">
-    <h1>Jhanvi Chaubey</h1>
-    <p class="hero-line">
-        engineering student · learning in public
-    </p>
-</header>
+  <!-- NAV -->
+  <nav>
+    <span class="nav-name">Jhanvi Chaubey</span>
+    <div class="nav-links">
+      <a href="#focus">Focus</a>
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/jhanvichaubey" target="_blank" class="nav-github">GitHub ↗</a>
+    </div>
+  </nav>
 
-<section class="card">
-    <h2>Currently Learning</h2>
-    <ul>
-        <li>Python fundamentals</li>
-        <li>Basic web development</li>
-    </ul>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">B.Tech Computer Science · SMIT · 2024–2028</p>
+      <h1>
+        <span class="hero-name-line">JHANVI</span>
+        <span class="hero-name-line accent-line">CHAUBEY</span>
+      </h1>
+      <p class="hero-statement">
+        Building systems that transform<br/>
+        complex information into<br/>
+        useful decisions.
+      </p>
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span>Currently: Research contributor (Elsevier under review) · Building GOROM · Open to CERN internship 2025</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#work" class="btn-primary">Selected Work</a>
+        <a href="https://linkedin.com/in/jhanvichaubey" target="_blank" class="btn-secondary">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="hero-grid-bg" aria-hidden="true">
+      <div class="grid-overlay"></div>
+    </div>
+  </section>
 
-<section class="card">
-    <h2>Small Experiments</h2>
-    <p>
-        <strong>Student Productivity Tracker</strong><br>
-        A Python program that records study hours and generates summaries
-        using file storage.
-    </p>
-</section>
+  <!-- CURRENT FOCUS -->
+  <section class="section" id="focus">
+    <div class="section-inner">
+      <div class="section-label">01 — Current Focus</div>
+      <h2>What I'm working on</h2>
+      <div class="focus-grid">
+        <div class="focus-item">
+          <span class="focus-num">I</span>
+          <h3>Environmental Intelligence</h3>
+          <p>Designing systems that interpret environmental data in human terms — not raw numbers, but felt experience.</p>
+        </div>
+        <div class="focus-item">
+          <span class="focus-num">II</span>
+          <h3>AI Applications in Medicine</h3>
+          <p>Applying machine learning to neuroimaging diagnostics — identifying early markers of cognitive disease.</p>
+        </div>
+        <div class="focus-item">
+          <span class="focus-num">III</span>
+          <h3>Scientific Computing</h3>
+          <p>Building tools that help researchers and students extract signal from noise — in data and in workflow.</p>
+        </div>
+        <div class="focus-item">
+          <span class="focus-num">IV</span>
+          <h3>Human-Centered Systems</h3>
+          <p>Technology designed around the people who use it — interpretable, accessible, and purposeful.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="card">
-    <h2>Socials</h2>
-    <ul>
-        <li>
-            <a href="https://www.linkedin.com/in/jhanvi-chaubey" target="_blank">
-                LinkedIn
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/jhv57" target="_blank">
-                Twitter (@jhv57)
-            </a>
-        </li>
-    </ul>
-</section>
+  <!-- PROJECTS / SELECTED WORK -->
+  <section class="section section-dark" id="work">
+    <div class="section-inner">
+      <div class="section-label light">02 — Selected Work</div>
+      <h2 class="light">Systems I've built</h2>
 
-<footer>
-    <p>learning &gt; perfection</p>
-</footer>
+      <!-- GOROM -->
+      <article class="project-block featured">
+        <div class="project-meta">
+          <span class="project-tag">Environmental Intelligence</span>
+          <span class="project-tag">React · Weather API</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h3 class="project-title">GOROM</h3>
+        <p class="project-subtitle">Environmental Intelligence Platform</p>
+        <p class="project-desc">
+          Standard weather applications report temperature. GOROM interprets it.<br/><br/>
+          The system represents how heat <em>actually feels</em> — not just what a thermometer reads — by combining environmental variables into a custom discomfort index calibrated for Indian climate conditions. Built in React with live weather API integration, GOROM bridges the gap between raw meteorological data and human thermal perception.
+        </p>
+        <div class="project-detail">
+          <div class="detail-item">
+            <span class="detail-label">Problem</span>
+            <span>Raw temperature data fails to communicate real human thermal discomfort, especially in high-humidity environments.</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Approach</span>
+            <span>Custom discomfort index combining temperature, humidity, and heat index — localized for Indian climate zones.</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Stack</span>
+            <span>React, OpenWeather API, custom index algorithm</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/jhanvichaubey/gorom" target="_blank" class="project-link">GitHub ↗</a>
+          <a href="#" class="project-link">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <!-- ITADMS -->
+      <article class="project-block">
+        <div class="project-meta">
+          <span class="project-tag">AI Systems</span>
+          <span class="project-tag">Terrain Intelligence</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h3 class="project-title">ITADMS</h3>
+        <p class="project-subtitle">Intelligent Terrain-Aware Defensive Mobility System</p>
+        <p class="project-desc">
+          A proposed AI-assisted terrain intelligence system designed to improve operational awareness in complex environments. ITADMS explores how machine learning can synthesize topographic data, real-time sensor input, and route history to support decision-making in high-stakes mobility scenarios. The project examines human-AI collaboration in time-sensitive contexts.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/jhanvichaubey" target="_blank" class="project-link">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- NEXUS -->
+      <article class="project-block">
+        <div class="project-meta">
+          <span class="project-tag">Knowledge Systems</span>
+          <span class="project-tag">Devopia 3.0</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h3 class="project-title">Nexus</h3>
+        <p class="project-subtitle">Knowledge Navigation Platform</p>
+        <p class="project-desc">
+          Developed during Devopia 3.0, Nexus explored ways to organize fragmented information into navigable knowledge structures. The project addressed a core problem in modern information environments: data exists everywhere but remains difficult to traverse meaningfully. Nexus proposed a graph-based approach to connecting related concepts across sources.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/jhanvichaubey" target="_blank" class="project-link">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- STUDENT PRODUCTIVITY TRACKER -->
+      <article class="project-block">
+        <div class="project-meta">
+          <span class="project-tag">Python · CLI</span>
+          <span class="project-tag">Personal Analytics</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h3 class="project-title">Student Productivity Tracker</h3>
+        <p class="project-subtitle">Personal Analytics System</p>
+        <p class="project-desc">
+          A Python CLI application that helps students understand their own study patterns through structured session logging and subject-wise analysis. Built with Python and CSV-based storage, it provides weekly summaries and trend reports — applying the same principle as GOROM: turning raw data into actionable insight.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/jhanvichaubey" target="_blank" class="project-link">GitHub ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="section-inner">
+      <div class="section-label">03 — Research</div>
+      <h2>Published & Under Review</h2>
+
+      <article class="research-block">
+        <div class="research-status">
+          <span class="status-badge under-review">Under Review · Elsevier</span>
+        </div>
+        <h3 class="research-title">Advances in Neuroimaging Diagnostics for Cognitive Diseases Using AI</h3>
+        <p class="research-desc">
+          This paper surveys the application of deep learning and machine learning models to neuroimaging data — MRI, PET, and fMRI — for the early diagnosis of cognitive conditions including Alzheimer's disease and related dementias. The work synthesizes recent literature on convolutional architectures, attention mechanisms, and transfer learning applied to medical imaging pipelines, and identifies current limitations in interpretability and dataset diversity.
+        </p>
+        <div class="research-meta">
+          <span>Keywords: Neuroimaging · Deep Learning · Cognitive Diagnostics · Medical AI</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section-tinted" id="about">
+    <div class="section-inner about-inner">
+      <div class="about-text">
+        <div class="section-label">04 — About</div>
+        <h2>Who I am</h2>
+        <p>
+          I'm a first-year Computer Science student at Sikkim Manipal Institute of Technology, building at the intersection of data, systems, and science. I write code, ask questions about how information becomes decisions, and try to build things that are genuinely useful.
+        </p>
+        <p>
+          My work spans environmental sensing, medical AI, and knowledge systems — not because I'm unfocused, but because I think the most interesting problems live between disciplines.
+        </p>
+        <p>
+          I'm drawn to CERN not just for the physics, but for the organizational model: thousands of people across disciplines, sharing infrastructure to answer fundamental questions. That kind of environment is exactly where I want to learn to work.
+        </p>
+        <div class="about-activity">
+          <h3>Other activity</h3>
+          <ul>
+            <li>SMITMUN — delegate, communications, public engagement</li>
+            <li>Devopia 3.0 Hackathon — Nexus project</li>
+            <li>Active GitHub contributor</li>
+          </ul>
+        </div>
+      </div>
+      <div class="questions-block">
+        <h3>Questions I'm exploring</h3>
+        <ul class="questions-list">
+          <li>How can data become decisions?</li>
+          <li>What information do humans systematically miss?</li>
+          <li>How do we keep AI systems interpretable?</li>
+          <li>How do we build technology around people, not the other way around?</li>
+          <li>What does early-warning mean in complex systems — medical, environmental, operational?</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="section-label">05 — Contact</div>
+      <h2>Get in touch</h2>
+      <p class="contact-desc">Open to research collaborations, internship opportunities, and interesting problems.</p>
+      <div class="contact-links">
+        <a href="mailto:jhanvi.connects@gmail.com" class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-val">jhanvi.connects@gmail.com ↗</span>
+        </a>
+        <a href="https://github.com/jhanvichaubey" target="_blank" class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-val">github.com/jhanvichaubey ↗</span>
+        </a>
+        <a href="https://linkedin.com/in/jhanvichaubey" target="_blank" class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-val">linkedin.com/in/jhanvichaubey ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span>Jhanvi Chaubey · B.Tech CSE · SMIT · 2024</span>
+      <span>Built with intent, not a template.</span>
+    </div>
+  </footer>
 
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Jhanvi Chaubey</title>
-
-    <!-- Cool fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header class="hero">
-    <h1>Jhanvi Chaubey</h1>
-    <p class="hero-line">
-        engineering student · learning in public
-    </p>
-</header>
-
-<section class="card">
-    <h2>Currently Learning</h2>
-    <ul>
-        <li>Python fundamentals</li>
-        <li>Basic web development</li>
-    </ul>
-</section>
-
-</body>
-<!-- PROJECTS SECTION — paste this wherever you want it to appear -->
-<section class="card">
-  <h2>Projects</h2>
-  <p>
-    Things I've built while figuring out how to make computers do what I want.
-  </p>
-
-  <ul>
-    <li>
-      <strong>Student Productivity Tracker</strong><br>
-      A Python CLI tool that logs daily study hours by subject and persists data
-      to a CSV file — so your records survive even after closing the terminal.
-      Built with vanilla Python and file I/O, no external dependencies.
-      <br><br>
-      <a href="https://github.com/JhanviChaubey/student-productivity-tracker" target="_blank">
-        View on GitHub ↗
-      </a>
-    </li>
-  </ul>
-
-<section class="card">
-    <h2>Small Experiments</h2>
-    <p>
-        <strong>Student Productivity Tracker</strong><br>
-        A Python program that records study hours and generates summaries
-        using file storage.
-    </p>
-</section>
-
-<section class="card">
-    <h2>Socials</h2>
-    <ul>
-        <li>
-            <a href="https://www.linkedin.com/in/jhanvi-chaubey" target="_blank">
-                LinkedIn
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/jhv57" target="_blank">
-                Twitter (@jhv57)
-            </a>
-        </li>
-    </ul>
-</section>
-
-<footer>
-    <p>learning &gt; perfection</p>
-</footer>
-
-</section>
-</html>
->>>>>>> d4900c0aee3685e599349e41ed354fad822099d5
