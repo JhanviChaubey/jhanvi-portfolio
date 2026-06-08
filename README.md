@@ -1,1 +1,1 @@
-real all about me
+read all about me
